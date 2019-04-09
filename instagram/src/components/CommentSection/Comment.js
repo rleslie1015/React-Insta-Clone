@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 function Comment(props) {
   return (
     <div>
-        {props.comment.username}
+       <strong>{props.comment.username} </strong> 
         {props.comment.text}
      
     </div>
