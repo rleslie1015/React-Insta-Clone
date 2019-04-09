@@ -12,12 +12,23 @@ class CommentSection extends React.Component {
   handleChange = (e)=>{
     this.setState({ text: e.target.value})
   }
+  addComment = (e) => {
+    e.preventDefault()
+    const newComment={
+      username: "NewUser",
+      text: this.state.text,
+    }
+    this.setState({
+      comment: [...this.state.comment, newComment],
+      text: "",
+    })
+  }
   render() {
     return (
       <div>
       
       {this.state.comment.map(singleComment=> <Comment key={singleComment.id} comment={singleComment}/>)}
-      <form >
+      <form onSubmit={this.addComment}>
         <input 
             type="text" 
             placeholder="Add Comment"
