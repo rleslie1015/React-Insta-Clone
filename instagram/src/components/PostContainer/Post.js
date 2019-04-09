@@ -1,13 +1,16 @@
 import React from 'react'
+import SearchBar from "../SearchBar/SearchBar";
 import CommentSection from "../CommentSection/CommentSection";
+
 function Post(props) {
  
   return (
     <div>
-   <img src={props.post.thumbnailUrl} />
+      <SearchBar />
+      <img src={props.post.thumbnailUrl} />
       {props.post.username}
-    
-        <CommentSection comment={props.post.comments}/>
+      <img src={props.post.imageUrl} />
+      <CommentSection comment={props.post.comments}/>
     </div>
   )
 }
