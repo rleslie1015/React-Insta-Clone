@@ -1,9 +1,12 @@
+
 import styled, { css } from "styled-components";
 
-const H1 = styled.h1`
-    font-family: 'Satisfy', cursive;
+const fontFamily = "Satisfy, Cursive";
+const StyledH1 = styled.h1`
+    font-family: ${fontFamily};
     margin: 0 10px;
-
+    font-weight: ${props => props.fontWeight};
     
+  
 `
-export default H1;
+export default StyledH1;
