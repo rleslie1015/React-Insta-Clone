@@ -1,14 +1,18 @@
 import React from 'react'
-import "./PostContainer.css";
 import CommentSection from "../CommentSection/CommentSection";
+import styled from "styled-components"
 
+const LogoImg = styled.img`
+  width: 50px;
+  border-radius: 50%;
+`
 function Post(props) {
  
   return (
     <div>
       <div>
         <div>
-          <img className="profile-img" src={props.post.thumbnailUrl} alt="user profile" />
+          <LogoImg className="profile-img" src={props.post.thumbnailUrl} alt="user profile" />
          <strong>{props.post.username} </strong> 
         </div>
         <div>
