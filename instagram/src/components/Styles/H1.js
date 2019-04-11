@@ -3,9 +3,9 @@ import styled, { css } from "styled-components";
 
 const fontFamily = "Satisfy, Cursive";
 const StyledH1 = styled.h1`
-    font-family: ${fontFamily};
+    font-family: ${props => props.fontFamily};
     margin: 0 10px;
-    font-weight: ${props => props.fontWeight};
+    font-size: ${props => props.fontSize};
     
   
 `

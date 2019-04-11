@@ -10,7 +10,7 @@ function SearchBar() {
     return (
         <Header>
             <div> <i class="fab fa-instagram fa-3x"></i></div>  
-            <H1>instagram</H1>
+            <H1 fontFamily = "Satisfy, Cursive">instagram</H1>
             <div> <input type="text"></input></div>
             <div> <i class="far fa-compass fa-3x"></i></div>  
             <div><i class="far fa-heart fa-3x"></i></div>
