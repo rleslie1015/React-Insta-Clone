@@ -4,8 +4,13 @@ import SearchBar from "./components/SearchBar/SearchBar";
 
 
 import PostContainer from "./components/PostContainer/PostContainer";
+import styled, { css, createGlobalStyle } from "styled-components";
 
-import './App.css';
+const GlobalStyles = createGlobalStyle`
+*, *::before, *::after 
+  .App {
+    margin: 50px;
+}`
 
 class App extends Component {
   constructor(){
@@ -22,6 +27,7 @@ class App extends Component {
 
           return (
         <div className="App">
+        <GlobalStyles />
           <SearchBar />
           <PostContainer post={this.state.dummyData}/>
       
